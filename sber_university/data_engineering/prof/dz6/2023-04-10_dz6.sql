@@ -14,7 +14,7 @@ SELECT
        sp.dt AS payment_dt,
        sp.person,
        sp.payment,
-       -- SUM(sp.payment) OVER (PARTITION BY sp.person, TO_CHAR(sp.dt, 'YYYY-MM') ORDER BY sp.dt) AS month_paid,
+       -- SUM(sp.payment) OVER (PARTITION BY sp.person, TO_CHAR(sp.dt, 'YYYY-MM') ORDER BY sp.dt) AS month_paid, # Неудачная реализация, т.к. приведение к строке "дорогая" операция
        SUM(sp.payment) OVER (PARTITION BY sp.person, (EXTRACT(MONTH FROM sp.dt) + EXTRACT(YEAR FROM sp.dt)*12) ORDER BY sp.dt) AS month_paid,
        xx.salary - SUM(sp.payment) OVER (PARTITION BY sp.person, (EXTRACT(MONTH FROM sp.dt) + EXTRACT(YEAR FROM sp.dt)*12) ORDER BY sp.dt) AS month_rest
   FROM de.salary_payments AS sp
