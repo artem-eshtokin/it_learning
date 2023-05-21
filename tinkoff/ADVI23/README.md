@@ -8,14 +8,26 @@
 
 ## Структура обучения:
 - SQL.
+Ссылка на запись лекции - https://youtu.be/d8nz1zR6KYM
 - Python.
+Ссылка на запись лекции - https://www.youtube.com/watch?v=ILmAOJzZ9xk
 - Визуализация данных.
+Ссылка на запись лекции - https://youtu.be/uCygs_wNIz0
 - Метрики.
+Ссылка на запись лекции - https://youtu.be/mBzfXiGrsCk
 - Математическая статистика.
+Ссылка на запись лекции - https://youtu.be/1UxDv4GcX2k
 - Как проводить А-Б тесты: Проверка гипотез.
+Ссылка на запись лекции - https://youtu.be/rxGmNBaxvM8
 - Как проводить А-Б тесты: Подготовка и проведение.
+Запись лекции https://youtu.be/ydolMJDB9Z8
 - Как делать выводы из данных.
+Запись лекции - https://youtu.be/mDgHY-nxnUM
 - Модели.
+Запись лекции -https://youtu.be/c_Rjfye0TAM
 - Мобильная аналитика.
+Ссылка на запись лекции - https://youtu.be/UGpKblNdLC4
 - Регрессии.
+Ссылка на запись лекции - https://youtu.be/bIm_RWuwKWk
 - Случайный лес.
+Ссылка на запись лекции - https://youtu.be/iBi6YBZE3Fk
