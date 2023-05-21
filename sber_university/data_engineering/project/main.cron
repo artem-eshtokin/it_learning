@@ -1,0 +1,2 @@
+# de13an.XXXX_main_cron
+14 04 * * * /home/de13an/XXXX/project/main.py
