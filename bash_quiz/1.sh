@@ -1,21 +1,21 @@
 #!/bin/bash
+echo -n "Input name directory: "
+read name_dir
 
-# Проверка на два параметра
-if [ $# -ne 2 ]; then
-  echo "Usage: $0 <_name> <search_string>"
+echo -n "Input string of text: "
+read str_text
+
+if [ ! -d "$name_dir" ]; 
+then echo "$name_dir is not a directory"
   exit 1
+else cd $name_dir
 fi
 
-# Проверка на директорию
-if [ ! -d "$1" ]; then
-  echo "Error: $1 is not a directory"
-  exit 1
-fi
+echo; echo "Result:"
 
-# Прогонка по файлам директории
-for file in "$1"/*; do
+for file in *; do
   if [ -f "$file" ] && [ -r "$file" ]; then
-    if grep -q "$2" "$file"; then
+    if grep -q "$str_text" "$file"; then
       echo "$file"
     fi
   fi
